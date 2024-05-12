@@ -995,13 +995,13 @@ class Extractor():
             out.write('\n')
             out.write(footer)
 
-        errs = (self.template_title_errs,
-                self.recursion_exceeded_1_errs,
-                self.recursion_exceeded_2_errs,
-                self.recursion_exceeded_3_errs)
-        if any(errs):
-            logging.warn("Template errors in article '%s' (%s): title(%d) recursion(%d, %d, %d)",
-                         self.title, self.id, *errs)
+        # errs = (self.template_title_errs,
+        #         self.recursion_exceeded_1_errs,
+        #         self.recursion_exceeded_2_errs,
+        #         self.recursion_exceeded_3_errs)
+        # if any(errs):
+        #     logging.warn("Template errors in article '%s' (%s): title(%d) recursion(%d, %d, %d)",
+        #                  self.title, self.id, *errs)
 
     # ----------------------------------------------------------------------
     # Expand templates
